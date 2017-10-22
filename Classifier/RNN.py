@@ -202,7 +202,6 @@ if __name__ == "__main__":
     plt.clf()
     
     plt.title('Loss Function [RNN]')
-    plt.xlim(0, len(test_pred_list)-1)
     plt.scatter(x=np.arange(0,len(loss_list)), y=loss_list)
     plt.xlabel('Epochs Size')
     plt.ylabel('Loss')
