@@ -1,0 +1,110 @@
+{
+  "hist_prices":{
+    "GetInterdayTimeSeries_Request_4": {
+      "Symbol": "",
+      "StartTime": "",
+      "EndTime": "",
+      "Interval": "DAILY",
+      "Field": [
+        "OPEN",
+        "HIGH",
+        "LOW",
+        "CLOSE",
+        "CLOSEYIELD",
+        "VOLUME",
+        "BID",
+        "ASK"
+      ],
+      "MetaField": [
+        "CCY"
+      ]
+    }
+  },
+  "intraday_prices":{
+    "GetIntradayTimeSeries_Request_4": {
+      "Symbol": "",
+      "StartTime": "",
+      "EndTime": "",
+      "Interval": "HOUR",
+      "TrimResponse": true,
+      "Field": [
+        "OPEN",
+        "HIGH",
+        "LOW",
+        "CLOSE",
+        "CLOSEYIELD",
+        "VOLUME",
+        "BID",
+        "ASK"
+      ]
+    }
+  },
+  "fund_quote":{
+    "GetFundQuote_Request_1": {
+      "Query": [
+        {
+          "Currency": {
+            "Include": true
+          },
+          "Name": {
+            "Include": true
+          },
+          "IssueISIN": {
+            "Include": true
+          },
+          "IsPrimaryRIC": {
+            "Include": true,
+            "BooleanValue": {
+              "Value": true
+            }
+          },
+          "RIC": {
+            "Include": true
+          },
+          "TickerSymbol": {
+            "Include": true,
+            "SymbolValue": [
+              {
+                "Value": ""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "equity_quote": {
+    "GetEquityQuote_Request_1": {
+      "Query": [
+        {
+          "Currency": {
+            "Include": true
+          },
+          "Name": {
+            "Include": true
+          },
+          "IssueISIN": {
+            "Include": true
+          },
+          "IsPrimaryRIC": {
+            "Include": true,
+            "BooleanValue": {
+              "Value": true
+            }
+          },
+          "RIC": {
+            "Include": true
+          },
+          "TickerSymbol": {
+            "Include": true,
+            "SymbolValue": [
+              {
+                "Value": ""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
