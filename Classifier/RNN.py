@@ -87,8 +87,8 @@ class RNN():
                 break
         datasetTest =  datasetNorm[datasetNorm.index >= test_first_idx]
         # determine training set
-        xTrain, yTrain = datasetTrain[['Closing', 'Ratio', 'Spread', 'USDJPY_Closing', 'Volume', 'compound', 'neu', 'neg', 'pos']].as_matrix(), datasetTrain['Next_Closing'].as_matrix()
-        xTest, yTest = datasetTest[['Closing', 'Ratio', 'Spread', 'USDJPY_Closing', 'Volume', 'compound', 'neu', 'neg', 'pos']].as_matrix(), datasetTest['Next_Closing'].as_matrix()     
+        xTrain, yTrain = datasetTrain[['Ratio', 'USDJPY_Closing', 'Volume', 'compound', 'neu', 'neg', 'pos']].as_matrix(), datasetTrain['Next_Closing'].as_matrix()
+        xTest, yTest = datasetTest[['Ratio', 'USDJPY_Closing', 'Volume', 'compound', 'neu', 'neg', 'pos']].as_matrix(), datasetTest['Next_Closing'].as_matrix()     
         return xTrain, yTrain, xTest, yTest
     
     
@@ -185,7 +185,7 @@ class RNN():
     
 
 if __name__ == "__main__":
-    rnn = RNN(num_epochs=10, num_features=9)
+    rnn = RNN(num_epochs=10, num_features=7)
     df, new_df = rnn.loadRawData()
     datasetNorm = rnn.normalizeRawData(df, new_df)
     xTrain, yTrain, xTest, yTest = rnn.splitTrainTestData(datasetNorm)
