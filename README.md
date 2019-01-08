@@ -11,7 +11,3 @@ Any project that gathers and uses data to infer non-obvious relationships is eli
 - Compared each ML algorithm based on confusion matrix, classification report, ROC/AUC curves, Learning Curves, and both applying stratified k-fold cross-validation
 - Constructed a pseudo Bitcoin Bullishness indicator and apply statistical tests for correlation, cointegration including ADF and Granger Causality Analysis vs the daily returns of BTC
 - Applied Recursive Neural Nets to the final section to show actual BTC prices vs RNN predicted series
-
-
-# Checkout HackHarvard branch!
-
